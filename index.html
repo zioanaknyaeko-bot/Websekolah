@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SDN 009 BALIKPAPAN KOTA</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background:#f0f9ff;
+    color:#1e293b;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#38bdf8;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    z-index:999;
+}
+
+nav h1{
+    color:white;
+    font-size:22px;
+    animation: bounce 2s infinite;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav ul li{
+    color:white;
+    font-weight:500;
+    cursor:pointer;
+}
+
+nav ul li:hover{
+    text-decoration:underline;
+}
+
+/* HERO */
+.hero{
+    margin-top:80px;
+    height:90vh;
+    background:linear-gradient(135deg,#38bdf8,#22c55e,#fde047);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h2{
+    font-size:44px;
+    color:white;
+    animation: slideDown 1.5s ease;
+}
+
+.hero p{
+    max-width:700px;
+    font-size:18px;
+    color:white;
+    line-height:1.8;
+    margin-top:15px;
+    animation: fadeIn 2s ease;
+}
+
+.hero button{
+    margin-top:30px;
+    padding:14px 40px;
+    background:#fde047;
+    border:none;
+    border-radius:40px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.hero button:hover{
+    transform:scale(1.1);
+    background:#facc15;
+}
+
+/* SECTION */
+section{
+    padding:80px 60px;
+}
+
+section h3{
+    font-size:32px;
+    color:#0284c7;
+    margin-bottom:20px;
+}
+
+section p{
+    font-size:17px;
+    line-height:1.9;
+    margin-bottom:15px;
+}
+
+/* CARDS */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+    transition:.4s;
+    animation: fadeUp 1.5s ease;
+}
+
+.card:hover{
+    transform:translateY(-10px) rotate(1deg);
+}
+
+/* FOOTER */
+footer{
+    background:#38bdf8;
+    text-align:center;
+    padding:25px;
+    color:white;
+    font-size:14px;
+}
+
+/* ANIMATION */
+@keyframes slideDown{
+    from{opacity:0; transform:translateY(-50px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+@keyframes fadeUp{
+    from{opacity:0; transform:translateY(40px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes bounce{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-5px);}
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    nav ul{display:none;}
+    .hero h2{font-size:34px;}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h1>SDN 009 BALIKPAPAN KOTA</h1>
+    <ul>
+        <li>Beranda</li>
+        <li>Profil</li>
+        <li>Program</li>
+        <li>Prestasi</li>
+        <li>Kontak</li>
+    </ul>
+</nav>
+
+<div class="hero">
+    <h2>Selamat Datang di SDN 009 Balikpapan Kota</h2>
+    <p>
+        Sekolah Dasar Negeri yang ramah anak, menyenangkan,
+        serta berkomitmen membentuk siswa yang cerdas,
+        kreatif, dan berakhlak mulia.
+    </p>
+    <button>Info PPDB</button>
+</div>
+
+<section>
+    <h3>Profil Sekolah</h3>
+    <p>
+        SDN 009 Balikpapan Kota adalah sekolah dasar negeri yang
+        berfokus pada pendidikan karakter, literasi, dan numerasi
+        dengan suasana belajar yang ceria dan aman bagi anak.
+    </p>
+</section>
+
+<section>
+    <h3>Program Unggulan</h3>
+    <div class="cards">
+        <div class="card">
+            <h4>📚 Literasi</h4>
+            <p>Membiasakan anak gemar membaca dan menulis.</p>
+        </div>
+        <div class="card">
+            <h4>🧮 Numerasi</h4>
+            <p>Meningkatkan kemampuan berhitung sejak dini.</p>
+        </div>
+        <div class="card">
+            <h4>🎨 Ekstrakurikuler</h4>
+            <p>Mengembangkan bakat seni, olahraga, dan kreativitas.</p>
+            <section class="gallery">
+    <h3>Galeri Kegiatan Sekolah</h3>
+    <p class="gallery-desc">
+        Dokumentasi kebersamaan guru dan kegiatan sekolah
+        SDN 009 Balikpapan Kota.
+    </p>
+
+    <div class="galeri">
+        <img src="foto1.jpg" alt="Kegiatan Guru SDN 009 Balikpapan Kota">
+        <img src="foto2.jpg" alt="Kegiatan Sekolah SDN 009 Balikpapan Kota">
+        <img src="foto3.jpg" alt="Kebersamaan Guru">
+        <img src="foto4.jpg" alt="Aktivitas Sekolah">
+    </div>
+</section>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2025 SDN 009 Balikpapan Kota | Website Sekolah Ceria
+</footer>
+
+</body>
+</html>
+         <style>/* GALERI FOTO */
+.gallery{
+    background:#fefce8;
+    text-align:center;
+}
+
+.gallery-desc{
+    max-width:700px;
+    margin:0 auto 40px;
+    font-size:16px;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    padding:0 20px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+    transition:.4s;
+    animation: fadeUp 1.2s ease;
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.08) rotate(1deg);
+}</style>
+
+
+
+<img src="galeri/guru.jpg">
